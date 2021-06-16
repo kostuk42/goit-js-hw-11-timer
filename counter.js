@@ -28,8 +28,8 @@ export default function CountdownTimer({ selector, targetDate }) {
       labelElem.textContent = label;
       let newText = addZero(times[key]) + times[key];
       if (valueElem.textContent !== newText ) {
-        valueElem.classList.add('animate__fadeIn');
-      setTimeout(() => {valueElem.classList.remove('animate__fadeIn')}, 300)
+        valueElem.classList.add('animate__bounceIn');
+      setTimeout(() => {valueElem.classList.remove('animate__bounceIn')}, 300)
       }
       valueElem.textContent = newText ;
     });
